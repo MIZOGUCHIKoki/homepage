@@ -1,0 +1,37 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <title>2変数関数の極値</title>
+</head>
+<h2 align="center">2変数関数の極値</h2>
+
+<body>
+    \(z=f(x,y)\)の極値を求める．<br><br>
+    停留点を求める．
+    \[
+    \begin{equation}
+    \left\{
+    \begin{aligned}
+    f_x(x,y) &= 0\\
+    f_y(x,y) &= 0
+    \end{aligned}
+    \right.
+    \end{equation}
+    \]
+    <br>
+    停留点\((a,b)\)に対して，
+    \[H=\begin{bmatrix}
+    f_{xx}(a,b) & f_{xy}(a,b) \\
+    f_{yx}(a,b) & f_{yy}(a,b)
+    \end{bmatrix}
+    \]
+    を求める．以下の条件で停留点\((a,b)\)が極値であるか否か判断する．
+    \[
+    \begin{cases}
+    \det{H} > 0 & (a,b)が極値となる\\
+    \det{H} < 0 & (a,b)が極値とならない\\ \det{H}=0 & (a,b)が極値か否かわからない \end{cases} \] もし，\((a,b)\)が極値となる時， \[ \begin{cases}
+        f_{xx}(a,b)> 0 & (a,b)が極小点\\
+        f_{xx}(a,b) < 0 & (a,b)が極大点 \end{cases} \] </html>
