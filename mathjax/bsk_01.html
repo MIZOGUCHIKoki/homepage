@@ -1,0 +1,54 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <title>全微分可能なら偏微分可能</title>
+</head>
+<h2 align="center">全微分可能なら偏微分可能</h2>
+
+<body>
+\(f(x,y)\)が\((x,y)=(a,b)\)で全微分可能であることの定義は以下である．
+
+\[\lim_{(h,k)\to(0,0)}\dfrac{|f(a+h,b+k)-f(a,b)-\lambda_1h-\lambda_2k|}{\sqrt{h^2+k^2}}=0\tag{1}\]
+を満たす，定数\(\lambda_1,\lambda_2\)が存在する．
+
+<h3>全微分可能性を利用して，偏微分可能性を証明する．</h3>
+\(f(x,y)\)が\((x,y)=(a,b)\)で全微分可能であることは，（1）を満たす定数\(\lambda_1,\lambda_2\)が存在することである．
+つまり，点\((h,k)\)がどのように原点\((0,0)\)へ近づいても
+\[\dfrac{|f(a+h,b+k)-f(a,b)-\lambda_1h-\lambda_2k|}{\sqrt{h^2+k^2}}\]
+は\(0\)に近づく．
+**（i）\(x\)について偏微分可能であることの証明
+そこで，点\((h,k)\)が\(x\)軸\((y=0)\)に沿って原点\((0,0)\)に近づくとき，\(k=0\)とおくと，
+点\((h,0)\)がどのように原点\((0,0)\)へ近づくので，
+\[\dfrac{|f(a+h,b)-f(a,b)-\lambda_1h|}{\sqrt{h^2}}\]
+が\(h\to 0\) のときに，限りなく\(0\)に近づく．
+つまり，
+\begin{align*}
+    & \lim_{h\to 0}\dfrac{|f(a+h,b)-f(a,b)-\lambda_1h|}{\sqrt{h^2}}=0\\
+    \Leftrightarrow & \lim_{h\to 0}\dfrac{|f(a+h,b)-f(a,b)-\lambda_1h|}{|h|}=0\\
+    \Leftrightarrow & \lim_{h\to 0}\left|\dfrac{f(a+h,b)-f(a,b)}{h}-\lambda_1\right|=0\\
+    \Leftrightarrow & \lim_{h\to 0}\left|\dfrac{f(a+h,b)-f(a,b)}{h}\right|=|\lambda_1|\\
+    \Leftrightarrow & \lim_{h\to 0}\dfrac{f(a+h,b)-f(a,b)}{h}=\lambda_1 \tag*{(2)}
+\end{align*}
+（2）より，\(f(x,y)\)は\(y\)について偏微分可能である．
+**（ii）\(y\)について偏微分可能であることの証明
+そこで，点\((h,k)\)が\(y\)軸\((x=0)\)に沿って原点\((0,0)\)に近づくとき，\(h=0\)とおくと，
+点\((0,k)\)がどのように原点\((0,0)\)へ近づくので，
+\[\dfrac{|f(a,b+k)-f(a,b)-\lambda_2k|}{\sqrt{k^2}}\]
+が\(k\to 0\) のときに，限りなく\(0\)に近づく．
+つまり，
+\begin{align*}
+    & \lim_{k\to 0}\dfrac{|f(a,b+k)-f(a,b)-\lambda_2k|}{\sqrt{k^2}}=0\\
+    \Leftrightarrow & \lim_{k\to 0}\dfrac{|f(a,b+k)-f(a,b)-\lambda_2k|}{|k|}=0\\
+    \Leftrightarrow & \lim_{k\to 0}\left|\dfrac{f(a,b+k)-f(a,b)}{k}-\lambda_2\right|=0\\
+    \Leftrightarrow & \lim_{k\to 0}\left|\dfrac{f(a,b+k)-f(a,b)}{k}\right|=|\lambda_2|\\
+    \Leftrightarrow & \lim_{k\to 0}\dfrac{f(a,b+k)-f(a,b)}{k}=\lambda_2 \tag*{(3)}
+\end{align*}
+（3）より，\(f(x,y)\)は\(y\)について偏微分可能である．
+
+(i)(ii)より，\(f(x,y)\)が\((a,b)\)について全微分可能であれば，\(f(x,y)\)は偏微分可能である．
+</body>
+
+</html>

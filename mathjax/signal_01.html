@@ -1,0 +1,36 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <title>フーリエ級数</title>
+</head>
+<h2 align="center">フーリエ級数</h2>
+<body>
+  <h3>フーリエ級数とは</h3>
+    周期\(T\)の周期信号\(f(t)\)を三角関数の級数（和）で表すこと．
+  <h3>考え方</h3>
+    あるパルス信号\(f_1,f_2,\dots ,f_n\)に対して，あるパルス信号\(f\)が存在し，
+    \[f=a_1f_1+a_2f_2+\dots +a_nf_n=\displaystyle\sum_{i=1}^{n}a_if_i\tag{1}\]
+    となる\(a_1,a_2,\dots ,a_n\)が存在する．<br>
+    このとき，\(a_1,a_2,\dots ,a_n\)は\(f_1,f_2,\dots ,a_n\)の存在割合である．
+    (1)には，以下のような性質がある．
+    \[
+    \displaystyle\int_{0}^{n}f_\alpha \cdot f_\beta dt=
+    \begin{cases}
+      0 & (\alpha\neq \beta)\\
+      c & (\alpha = \beta)
+    \end{cases}
+    \]
+    つまり，\(f_\alpha=f_\beta\)が直行するという性質を有する．これにより，以下の式が導ける．
+    \[
+    \begin{align*}
+      a_\beta &= \dfrac{1}{\displaystyle\int_{0}^{n}f_\beta^2 dt}\int_{0}^n f\cdot f_\beta dt \\
+              &= \dfrac{1}{\displaystyle\int_{0}^{n}f_\beta^2 dt}(f,f_\beta)\tag{2}
+    \end{align*}
+    
+    \]
+</body>
+
+
