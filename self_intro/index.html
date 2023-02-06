@@ -1,50 +1,104 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="./CSS/index.css">
-  <title>Mizoのホームページ</title>
+<title>Mizoのホームページ</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 </head>
-
 <body>
-  <h1>Mizoのホームページ</h1>
-  <h2>名前</h2>
-  <h3> 溝口 洸熙 (MIZOGUCHI Koki)</h3>
 
-  <h2>出身</h2>
-  熊本県熊本市（くまモンのアジト）
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.7.0/marked.js"></script>  
 
-  <h2>所属大学・学群</h2>
-  高知県立大学法人　高知工科大学　情報学群　学士生(2021年度入学)<p>
-    情報セキュリティシステム研究室（清水研究室）
-  <p>
-    教職課程
-  <p>
-    ・中学校教諭一種免許状　　数学
-  <p>
-    ・高等学校教諭一種免許状　数学
-  <p>
-    ・高等学校教諭一種免許状　情報
-  <p>
+<script type="text/plain" id="here">
 
-  <h2>現在所属の部活動・学生団体</h2>
-  <ul>
-    <li>吹奏楽部　打楽器</li>
-    <li>Cykut（情報セキュリティに関する学生団体）</li>
-    <li>CSL香美市ICT化プロジェクト</li>
-    <li>GIGAスクール　オブザーバー</li>
-  </ul>
+# Personal information
+---
+MIZOGUCHI Koki</p>
+溝口 洸熙
 
+# Affiliation
+---
+- 高知工科大学 情報学群 学士生 （2021年度入学）
+  - 情報セキュリティシステム研究室（清水研究室）
+- アカリク CloudLaTeX オペレーションチーム
+  - AWS
+  - LaTeX
+- Cykut（サイバーボランティア団体，ネットワークセキュリティに関する学生団体）
+- 香美市活動連携基盤
+- GIGAスクール オブザーバ
 
+# Researches
+---
+- 軽量認証プロトコル**SAS**に関する研究
+  - 相互認証プロトコル **SAS-M** の考案
+  - SAS-Lによる画像暗号化，復号
+- ネットワークの設計
 
-  <h2>関連リンク</h2>
-  <a href="">学生活動における登壇・発表済み資料(準備中)</a><br>
-  <a href="https://github.com/MIZOGUCHIKoki" target="_blank"> GitHub</a><br>
-  <a href="https://mizomizo0515.hatenablog.com" targe="_blank">MizoのBlog</a><br>
-  <a href="../mathjax/index.html" targe="_blank">大学数学メモ</a><br>
+# Link
+---
+- [Vlog](https://mizomizo0515.hatenablog.com/)
+- [Github](https://github.com/MIZOGUCHIKoki)
 
+## Overview
+<table align="center">
+<tbody>
+	<tr>
+		<td>Homepage</td>
+    <td>https://www.ugs.kochi-tech.ac.jp/250373b/self_intro/index.html</td>
+	</tr>
+	<tr>
+		<td>My location</td>
+		<td>Kochi-Pref. Japan
+	</tr>
+	<tr>
+		<td>Research area</td>
+		<td>Cryptography, Authentication, Network security</td>
+	</tr>
+	<tr>
+		<td>Implementation language</td>
+		<td>Japanese</td>
+	</tr>
+	<tr>
+		<td>Platform</td>
+		<td>🌏</td>
+	</tr>
+	<tr>
+		<td>OS</td>
+		<td>macOS</td>
+	</tr>
+	<tr>
+		<td>Blog</td>
+		<td>https://mizomizo0515.hatenablog.com/</td>
+	</tr>
+</tbody>
+</table>
+
+<p align="left">
+   	 <img height="20" src="https://komarev.com/ghpvc/?username=MIZOGUCHIKoki&style=plastic" />
+   	 <img height="20" src="https://img.shields.io/twitter/follow/k_mizomizo?label=Twitter&logo=twitter&style=plastic" />
+    	 <img height="20" src="https://img.shields.io/github/followers/MIZOGUCHIKoki?label=follow&logo=github&style=plastic" />
+   	 <img height="20" src="https://img.shields.io/github/issues/MIZOGUCHIKoki/MIZOGUCHIKoki.svg?&style=plastic" />
+</p>
+
+<img height="300" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MIZOGUCHIKoki&theme=dracula" />
+
+## 🏆 Github Profile Trophy & Status
+<a href="https://github.com/MIZOGUCHIKoki/github-profile-trophy">
+  <img width=800 src="https://github-profile-trophy.vercel.app/?username=MIZOGUCHIKoki&column=8&theme=gruvbox&no-frame=true"/>
+</a>
+<p align="left">
+  <img alt="Top Langs" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MIZOGUCHIKoki&layout=compact&show_icons=true&theme=dracula&layout=default" />
+  <img alt="github stats" height="200" src="https://github-readme-stats.vercel.app/api?username=MIZOGUCHIKoki&theme=dracula&show_icons=ture" />
+</p>
+</script>
+
+<script>
+var here = document.getElementById('here').textContent;
+
+var md = marked(here);  
+console.log(md); // Debug
+
+document.body.innerHTML = md;
+</script>  
 
 </body>
-
 </html>
