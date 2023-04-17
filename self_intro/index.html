@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Mizoのホームページ</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <title>Mizoのホームページ</title>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 </head>
+
 <body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.7.0/marked.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.7.0/marked.js"></script>
 
-<script type="text/plain" id="here">
+  <script type="text/plain" id="here">
 
 # Personal information
 ---
@@ -35,6 +37,7 @@ MIZOGUCHI Koki</p>
 
 # Repersentative reserch papers
 ---
+- [情報学群実験第3C 3i 音声合成の資料](../public_files/Presentation_Public.pdf)
 - [Proposal of an Ultra-Lightweight One-Time Password Authentication Method](https://github.com/MIZOGUCHIKoki/Paper_SAS-L) Private, 公開準備中
 
 # Link
@@ -64,14 +67,15 @@ MIZOGUCHI Koki</p>
 </p>
 </script>
 
-<script>
-var here = document.getElementById('here').textContent;
+  <script>
+    var here = document.getElementById('here').textContent;
 
-var md = marked(here);  
-console.log(md); // Debug
+    var md = marked(here);
+    console.log(md); // Debug
 
-document.body.innerHTML = md;
-</script>  
+    document.body.innerHTML = md;
+  </script>
 
 </body>
+
 </html>
